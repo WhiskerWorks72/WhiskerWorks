@@ -1,14 +1,409 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawfectly Whiskered</title>
+    
+    <!-- SEO & Social -->
+    <title>WhiskerWorks – Archie, Rocco, Des & Pete | DIY Pet Tech & Shorts</title>
+    <meta name="description" content="Home of Archie, Rocco, Des & Pete. 60-second pet chaos, DIY tech, future merch & SaaS from Pawfectly Whiskered YouTube channel.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="WhiskerWorks – Home of Archie, Rocco, Des & Pete">
+    <meta property="og:description" content="DIY pet tech • Shorts • Future merch & SaaS">
+    <meta property="og:image" content="https://yt3.googleusercontent.com/ytc/AIdro_kVxYB0QqPxJzQ_9K6vZqYKJ9Z8X0qZ5wZqXg=s160-c-k-c0x00ffffff-no-rj">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        playfair: ['Playfair Display', 'serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Live YouTube Stats Setup -->
+    <script>
+        const CHANNEL_ID = "UCx6gpOO4LfyqTs3LkIe0fZw";
+        const STATS_ELEMENT = "liveStats";
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to Pawfectly Whiskered</h1>
-    <p>Your ultimate destination for pet grooming!</p>
-    <img src="Archie.JPG" alt="Archie" />
-    <img src="Rocco.JPG" alt="Rocco" />
+<body class="bg-slate-900 text-white">
+
+    <!-- ============================================ -->
+    <!-- HEADER (Fixed on Scroll) -->
+    <!-- ============================================ -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="font-playfair text-3xl font-bold text-amber-500 hover:text-amber-400 transition-colors">
+                WhiskerWorks
+            </a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden md:flex items-center gap-6">
+                <a href="#about" class="text-slate-300 hover:text-white transition-colors">About</a>
+                <a href="#pets" class="text-slate-300 hover:text-white transition-colors">Pets</a>
+                <a href="#gear" class="text-slate-300 hover:text-white transition-colors">Gear</a>
+                <a href="#products" class="text-slate-300 hover:text-white transition-colors">Products</a>
+                <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" 
+                   class="bg-red-600 hover:bg-red-700 px-6 py-2 rounded-full font-semibold transition-all hover:scale-105">
+                    Watch on YouTube
+                </a>
+            </div>
+            
+            <!-- Mobile Hamburger -->
+            <button id="menuToggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                </svg>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu (Full Screen) -->
+        <div id="mobileMenu" class="hidden fixed inset-0 bg-slate-900 z-40 flex flex-col items-center justify-center gap-8">
+            <button id="menuClose" class="absolute top-6 right-6 text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <a href="#about" class="text-3xl text-slate-300 hover:text-white mobile-nav-link">About</a>
+            <a href="#pets" class="text-3xl text-slate-300 hover:text-white mobile-nav-link">Pets</a>
+            <a href="#gear" class="text-3xl text-slate-300 hover:text-white mobile-nav-link">Gear</a>
+            <a href="#products" class="text-3xl text-slate-300 hover:text-white mobile-nav-link">Products</a>
+            <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" 
+               class="bg-red-600 hover:bg-red-700 px-8 py-4 rounded-full text-xl font-semibold">
+                Watch on YouTube
+            </a>
+        </div>
+    </header>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-b from-slate-800 to-slate-900 pt-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-amber-400 to-amber-600 bg-clip-text text-transparent">
+                Welcome to WhiskerWorks 🐶✨
+            </h1>
+            <p class="text-2xl md:text-3xl mb-4 text-slate-200">
+                Home of Archie, Rocco, Des & Pete
+            </p>
+            <p class="text-xl text-slate-400 mb-12 max-w-2xl mx-auto">
+                DIY pet tech • Shorts • Future merch & SaaS
+            </p>
+            <a href="#pets" class="inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 px-10 py-4 rounded-full text-lg font-bold transition-all hover:scale-105 shadow-lg hover:shadow-amber-500/50">
+                See the Pets
+            </a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- LIVE STATS BAR -->
+    <!-- ============================================ -->
+    <div class="bg-slate-800 py-4 border-y border-slate-700">
+        <div class="container mx-auto px-4 text-center">
+            <p id="liveStats" class="text-amber-300 text-lg animate-pulse">
+                📈 Loading live stats…
+            </p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- CHANNEL DESCRIPTION -->
+    <!-- Copy this section to duplicate -->
+    <!-- ============================================ -->
+    <section id="about" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-8 text-amber-500">
+                About Us
+            </h2>
+            <p class="text-xl text-slate-300 leading-relaxed mb-6">
+                We make 60-second pet chaos with Archie (Golden Retriever), Rocco (Corgi), Des (Siamese) & Pete (Bombay).
+            </p>
+            <p class="text-lg text-slate-400">
+                20.8K views last 28 days • 67 subs • 42 new this month.
+            </p>
+            <p class="text-lg text-slate-400">
+                Soon: auto-feeders, 3D-print files, SaaS wait-list.
+            </p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PETS GRID -->
+    <!-- Copy each card block to add more pets -->
+    <!-- ============================================ -->
+    <section id="pets" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-12 text-center text-amber-500">
+                Meet the Crew
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- ========== PET CARD TEMPLATE START ========== -->
+                <!-- Pet 1: Archie -->
+                <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="Archie.JPG" alt="Archie" class="w-full h-64 object-cover rounded-2xl" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2 text-amber-400">Archie</h3>
+                        <p class="text-slate-400 text-sm mb-4">Golden Retriever • 5</p>
+                        <ul class="text-slate-300 text-sm space-y-2 mb-6">
+                            <li>• He Has 6 Nicknames! </li>
+                            <li>• Is a very bad boy</li>
+                            <li>• He is very cute!</li>
+                        </ul>
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered/shorts" target="_blank" 
+                           class="text-amber-500 hover:text-amber-400 font-semibold text-sm">
+                            Latest Short →
+                        </a>
+                    </div>
+                </div>
+                <!-- ========== PET CARD TEMPLATE END ========== -->
+                
+                <!-- Pet 2: Rocco -->
+                <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="Rocco.JPG" alt="Rocco" class="w-full h-64 object-cover rounded-2xl" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2 text-amber-400">Rocco</h3>
+                        <p class="text-slate-400 text-sm mb-4">Corgi • 2</p>
+                        <ul class="text-slate-300 text-sm space-y-2 mb-6">
+                            <li>• He is ball obsessed</li>
+                            <li>• He has a insane side eye</li>
+                            <li>• He sploots</li>
+                        </ul>
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered/shorts" target="_blank" 
+                           class="text-amber-500 hover:text-amber-400 font-semibold text-sm">
+                            Latest Short →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pet 3: Des -->
+                <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="https://via.placeholder.com/400x400/1e293b/f59e0b?text=Des+the+Siamese" alt="Des" class="w-full h-64 object-cover rounded-2xl" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2 text-amber-400">Des</h3>
+                        <p class="text-slate-400 text-sm mb-4">Siamese • 6</p>
+                        <ul class="text-slate-300 text-sm space-y-2 mb-6">
+                            <li>• One Cat Army</li>
+                            <li>• Always grumpy</li>
+                            <li>• He never leaves his bed</li>
+                        </ul>
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered/shorts" target="_blank" 
+                           class="text-amber-500 hover:text-amber-400 font-semibold text-sm">
+                            Latest Short →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pet 4: Pete -->
+                <div class="bg-slate-900 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="https://via.placeholder.com/400x400/1e293b/f59e0b?text=Pete+the+Bombay" alt="Pete" class="w-full h-64 object-cover rounded-2xl" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="font-playfair text-2xl font-bold mb-2 text-amber-400">Pete</h3>
+                        <p class="text-slate-400 text-sm mb-4">Bombay • 12</p>
+                        <ul class="text-slate-300 text-sm space-y-2 mb-6">
+                            <li>• He eats plastic😂</li>
+                            <li>• He will use everything but his bed as a bed</li>
+                            <li>• He loves pom poms</li>
+                        </ul>
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered/shorts" target="_blank" 
+                           class="text-amber-500 hover:text-amber-400 font-semibold text-sm">
+                            Latest Short →
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- GEAR I USE -->
+    <!-- Copy each item block to add more gear -->
+    <!-- ============================================ -->
+    <section id="gear" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-12 text-center text-amber-500">
+                Gear I Use in Every Video
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- ========== GEAR ITEM TEMPLATE START ========== -->
+                <!-- Gear 1 -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="https://via.placeholder.com/400x300/1e293b/f59e0b?text=Gear+Item+1" alt="Gear Item 1" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Camera / Equipment Name</h3>
+                        <a href="AMAZON_AFFILIATE_LINK_HERE" target="_blank" 
+                           class="inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-2 rounded-full font-semibold transition-all">
+                            View on Amazon
+                        </a>
+                    </div>
+                </div>
+                <!-- ========== GEAR ITEM TEMPLATE END ========== -->
+                
+                <!-- Gear 2 -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="https://via.placeholder.com/400x300/1e293b/f59e0b?text=Gear+Item+2" alt="Gear Item 2" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Microphone / Audio Gear</h3>
+                        <a href="AMAZON_AFFILIATE_LINK_HERE" target="_blank" 
+                           class="inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-2 rounded-full font-semibold transition-all">
+                            View on Amazon
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Gear 3 -->
+                <div class="bg-slate-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all hover:scale-105">
+                    <img src="https://via.placeholder.com/400x300/1e293b/f59e0b?text=Gear+Item+3" alt="Gear Item 3" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3 text-white">Lighting Equipment</h3>
+                        <a href="AMAZON_AFFILIATE_LINK_HERE" target="_blank" 
+                           class="inline-block bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-2 rounded-full font-semibold transition-all">
+                            View on Amazon
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FUTURE PRODUCTS CAROUSEL -->
+    <!-- Copy each card to add more products -->
+    <!-- ============================================ -->
+    <section id="products" class="py-20 bg-slate-800">
+        <div class="container mx-auto px-4">
+            <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-12 text-center text-amber-500">
+                Coming Soon
+            </h2>
+            
+            <div class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:overflow-visible">
+                
+                <!-- Product 1: Smart Feeder SaaS -->
+                <div class="min-w-[300px] md:min-w-0 bg-slate-900 rounded-2xl p-8 shadow-xl snap-start">
+                    <div class="text-5xl mb-4">🤖</div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4 text-amber-400">Smart Feeder SaaS</h3>
+                    <p class="text-slate-300 mb-6">
+                        Automated pet feeding with app control. Join the wait-list!
+                    </p>
+                    <form id="waitlistForm" class="space-y-3">
+                        <input type="email" id="emailInput" placeholder="your@email.com" required
+                               class="w-full px-4 py-3 rounded-lg bg-slate-800 border border-slate-700 focus:border-amber-500 focus:outline-none text-white">
+                        <button type="submit" 
+                                class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 px-6 py-3 rounded-lg font-bold transition-all">
+                            Join Wait-list
+                        </button>
+                    </form>
+                    <p id="waitlistMessage" class="text-green-400 text-sm mt-2 hidden">Thanks! You're on the list 🎉</p>
+                </div>
+                
+                <!-- Product 2: 3D-Print Pack -->
+                <div class="min-w-[300px] md:min-w-0 bg-slate-900 rounded-2xl p-8 shadow-xl snap-start">
+                    <div class="text-5xl mb-4">🖨️</div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4 text-amber-400">3D-Print Pack</h3>
+                    <p class="text-slate-300 mb-6">
+                        Downloadable STL files for DIY pet gadgets and toys.
+                    </p>
+                    <a href="GUMROAD_LINK_HERE" target="_blank"
+                       class="inline-block w-full text-center bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-lg font-bold transition-all">
+                        Coming to Gumroad
+                    </a>
+                </div>
+                
+                <!-- Product 3: Merch Drop -->
+                <div class="min-w-[300px] md:min-w-0 bg-slate-900 rounded-2xl p-8 shadow-xl snap-start">
+                    <div class="text-5xl mb-4">👕</div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4 text-amber-400">Merch Drop</h3>
+                    <p class="text-slate-300 mb-6">
+                        WhiskerWorks apparel featuring Archie, Rocco, Des & Pete.
+                    </p>
+                    <div class="inline-block w-full text-center bg-gradient-to-r from-amber-500 to-amber-600 text-slate-900 px-6 py-3 rounded-lg font-bold">
+                        Coming Soon 🚀
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================ -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-800">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-slate-400 text-sm text-center md:text-left">
+                    <p class="font-playfair text-xl font-bold text-amber-500 mb-2">WhiskerWorks</p>
+                    <p>Built by Lincoln • WhiskerWorks 2025</p>
+                </div>
+                
+                <div class="flex gap-6">
+                    <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" 
+                       class="text-slate-400 hover:text-red-500 transition-colors">
+                        YouTube
+                    </a>
+                    <a href="https://github.com/WhiskerWorks72/WhiskerWorks" target="_blank" 
+                       class="text-slate-400 hover:text-amber-500 transition-colors">
+                        GitHub
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-white transition-colors">
+                        Privacy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================ -->
+    <!-- JAVASCRIPT -->
+    <!-- ============================================ -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Live YouTube Stats Script -->
+    <script>
+        fetch(\`https://www.youtube.com/channel/\${CHANNEL_ID}\`)
+            .then(() => fetch(\`https://mixerno.space/api/youtube-channel-counter/user/\${CHANNEL_ID}\`))
+            .then(r => r.json())
+            .then(d => {
+                const subs = d.counts?.[0]?.count || '67';
+                document.getElementById('liveStats').innerHTML = 
+                    \`📈 20.8K views • \${parseInt(subs).toLocaleString()} subs • 42 gained this month\`;
+                document.getElementById('liveStats').classList.remove('animate-pulse');
+            })
+            .catch(() => {
+                document.getElementById('liveStats').innerHTML = 
+                    '📈 20.8K views • 67 subs • 42 gained this month';
+                document.getElementById('liveStats').classList.remove('animate-pulse');
+            });
+    </script>
+
 </body>
 </html>
