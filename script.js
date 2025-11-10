@@ -119,7 +119,7 @@ if (notifyForm) {
         
         // Show success message
         const originalHTML = notifyForm.innerHTML;
-        notifyForm.innerHTML = '<p style="color: var(--teal); font-weight: 600;">✓ Thanks! We\'ll notify you when merch drops!</p>';
+        notifyForm.innerHTML = '<p style="color: var(--primary-red); font-weight: 600;">✓ Thanks! We\'ll notify you when merch drops!</p>';
         
         // Reset form after 3 seconds
         setTimeout(() => {
@@ -149,7 +149,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observe all cards and sections
-const animatedElements = document.querySelectorAll('.crew-card, .gear-card, .merch-card, .video-card, .donate-card');
+const animatedElements = document.querySelectorAll('.crew-card, .gear-card, .merch-card, .donate-card');
 animatedElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(30px)';
@@ -158,20 +158,8 @@ animatedElements.forEach(el => {
 });
 
 // ================================
-// Video Card Click Handlers
+// Video Card Click Handlers - REMOVED
 // ================================
-const videoCards = document.querySelectorAll('.video-card');
-
-videoCards.forEach(card => {
-    card.addEventListener('click', () => {
-        // In a real implementation, this would open the YouTube video
-        // For now, redirect to the channel
-        window.open('https://www.youtube.com/@PawfectlyWhiskered', '_blank');
-    });
-    
-    // Add cursor pointer
-    card.style.cursor = 'pointer';
-});
 
 // ================================
 // Contact Form Handling
@@ -240,7 +228,7 @@ window.addEventListener('scroll', () => {
 const style = document.createElement('style');
 style.textContent = `
     .nav-link.active {
-        color: var(--teal) !important;
+        color: var(--primary-red) !important;
     }
 `;
 document.head.appendChild(style);
@@ -263,9 +251,9 @@ if ('loading' in HTMLImageElement.prototype) {
 // ================================
 // Console Message
 // ================================
-console.log('%c🐾 WhiskerWorks', 'color: #0d9488; font-size: 24px; font-weight: bold;');
+console.log('%c🐾 WhiskerWorks', 'color: #E63946; font-size: 24px; font-weight: bold;');
 console.log('%cBuilt with ❤️ for Archie, Rocco, Pete & Des', 'color: #64748b; font-size: 14px;');
-console.log('%cYouTube: https://www.youtube.com/@PawfectlyWhiskered', 'color: #0d9488; font-size: 12px;');
+console.log('%cYouTube: https://www.youtube.com/@PawfectlyWhiskered', 'color: #F77F00; font-size: 12px;');
 
 // ================================
 // Prevent Form Resubmission
