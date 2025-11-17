@@ -3,153 +3,165 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Best pet gear for cats and dogs – affiliate picks by 13-year-old pet expert Lincoln">
-<title>Lincoln's Top Pet Picks – WhiskerWorks!</title>
+<meta name="description" content="Best pet gear for cats and dogs – affiliate picks by 13-year-old pet expert Lincoln from WhiskerWorks">
+<title>Lincoln's Top Pet Picks – WhiskerWorks Approved!</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#e3f2fd,#e8f5e9);padding:20px;line-height:1.6}
-.container{max-width:1200px;margin:0 auto}.header{text-align:center;margin-bottom:30px}.header h1{color:#1976d2;font-size:2em;margin-bottom:10px}
-.header h1::before{content:"🐾 "}
-.header h1::after{content:" 🐾"}
-.disclosure{background:#fff3cd;border:2px solid #ffc107;border-radius:8px;padding:15px;margin-bottom:30px;text-align:center;color:#856404;font-size:.9em}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
-.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 6px rgba(0,0,0,.1);transition:transform .3s,box-shadow .3s}
-.card:hover{transform:translateY(-8px);box-shadow:0 12px 24px rgba(0,0,0,.15)}
-.card img{width:100%;height:200px;object-fit:cover;border-radius:8px;margin-bottom:15px}
-.card h3{color:#1976d2;margin-bottom:10px;font-size:1.2em}
-.brand{color:#666;font-size:.85em;margin-bottom:8px}
-.price{color:#2e7d32;font-size:1.3em;font-weight:bold;margin:10px 0}
-.features{list-style:none;margin:10px 0;font-size:.9em}
-.features li{padding:5px 0;color:#555}
-.features li::before{content:"✓ ";color:#4caf50;font-weight:bold}
-.rating{color:#ffc107;margin:10px 0;font-size:1.1em}
-.btn{display:block;background:linear-gradient(135deg,#4caf50,#8bc34a);color:#fff;text-decoration:none;padding:12px 24px;border-radius:25px;text-align:center;margin-top:15px;font-weight:bold;transition:all .3s}
-.btn:hover{box-shadow:0 0 20px rgba(76,175,80,.6);transform:scale(1.05)}
-.carousel{margin:30px 0;text-align:center}
-.carousel-btn{background:#1976d2;color:#fff;border:none;padding:10px 20px;margin:0 10px;border-radius:20px;cursor:pointer}
-.carousel-btn:hover{background:#1565c0}
-@media(max-width:768px){.grid{grid-template-columns:1fr}.header h1{font-size:1.5em}}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',Tahoma,sans-serif;background:linear-gradient(135deg,#e3f2fd,#e8f5e9);padding:15px;line-height:1.6;color:#333}
+.container{max-width:1200px;margin:0 auto}.header{text-align:center;margin-bottom:25px;padding:20px;background:rgba(255,255,255,.9);border-radius:15px;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.header h1{background:linear-gradient(135deg,#1976d2,#4caf50);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:2.2em;margin-bottom:10px;font-weight:800}
+.header h1::before{content:"🐾 "}.header h1::after{content:" 🐾"}
+.header p{color:#555;font-size:1.1em;margin-top:8px}
+.disclosure{background:linear-gradient(135deg,#fff3cd,#ffe8a1);border:3px dashed #ffc107;border-radius:12px;padding:18px;margin-bottom:30px;text-align:center;color:#856404;font-size:.95em;font-weight:600;box-shadow:0 3px 10px rgba(255,193,7,.3)}
+.disclosure b{color:#d97706}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;margin-bottom:30px}
+.card{background:#fff;border-radius:15px;padding:20px;box-shadow:0 5px 15px rgba(0,0,0,.12);transition:all .4s cubic-bezier(.175,.885,.32,1.275);position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;width:100%;height:4px;background:linear-gradient(90deg,#4caf50,#2196f3,#9c27b0);opacity:0;transition:opacity .3s}
+.card:hover{transform:translateY(-12px) scale(1.02);box-shadow:0 15px 35px rgba(0,0,0,.2)}.card:hover::before{opacity:1}
+.card img{width:100%;height:220px;object-fit:contain;border-radius:10px;margin-bottom:15px;background:#f5f5f5;padding:10px;transition:transform .3s}
+.card:hover img{transform:scale(1.05)}
+.card h3{color:#1976d2;margin-bottom:8px;font-size:1.25em;font-weight:700}
+.brand{color:#666;font-size:.9em;margin-bottom:10px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+.price{color:#2e7d32;font-size:1.5em;font-weight:800;margin:12px 0;text-shadow:1px 1px 2px rgba(46,125,50,.2)}
+.features{list-style:none;margin:12px 0;font-size:.92em;line-height:1.8}
+.features li{padding:6px 0;color:#555;padding-left:5px}
+.features li::before{content:"✓ ";color:#4caf50;font-weight:900;margin-right:5px;font-size:1.1em}
+.rating{color:#ffc107;margin:12px 0;font-size:1.15em;font-weight:600}
+.btn{display:block;background:linear-gradient(135deg,#4caf50,#66bb6a);color:#fff;text-decoration:none;padding:14px 28px;border-radius:30px;text-align:center;margin-top:15px;font-weight:700;transition:all .3s;font-size:1.05em;letter-spacing:.5px;text-transform:uppercase;box-shadow:0 4px 15px rgba(76,175,80,.4)}
+.btn:hover{box-shadow:0 6px 25px rgba(76,175,80,.6);transform:scale(1.08);background:linear-gradient(135deg,#66bb6a,#81c784)}
+.carousel{margin:40px 0;text-align:center;padding:20px;background:rgba(255,255,255,.8);border-radius:12px;box-shadow:0 3px 10px rgba(0,0,0,.1)}
+.carousel-btn{background:linear-gradient(135deg,#1976d2,#2196f3);color:#fff;border:none;padding:12px 24px;margin:0 10px;border-radius:25px;cursor:pointer;font-weight:700;font-size:1em;transition:all .3s;box-shadow:0 3px 10px rgba(25,118,210,.3)}
+.carousel-btn:hover{background:linear-gradient(135deg,#2196f3,#42a5f5);box-shadow:0 5px 20px rgba(25,118,210,.5);transform:scale(1.05)}
+#carouselInfo{font-size:1.1em;font-weight:600;color:#555;display:inline-block;min-width:150px}
+@media(max-width:768px){.grid{grid-template-columns:1fr;gap:20px}.header h1{font-size:1.6em}.card{padding:15px}.carousel-btn{padding:10px 18px;font-size:.9em;margin:5px}}
 </style>
 </head>
 <body>
 <div class="container">
 <div class="header">
 <h1>Lincoln's Top Pet Picks – WhiskerWorks Approved!</h1>
-<p>Pawfectly tested by Archie, Rocco, Pete & Des! 🐕🐈</p>
+<p>Purr-fectly tested by Freddy, Archie, Rocco, Pete & Des! 🐕🐈</p>
 </div>
 
 <div class="disclosure">
-⚠️ <b>As an Amazon Associate, I earn from qualifying purchases.</b> Links support my channel Pawfectly Whiskered! 💙
+⚠️ <b>FTC Disclosure:</b> As an Amazon Associate, I earn from qualifying purchases. These links support my channel <b>Pawfectly Whiskered</b>! Every purchase helps me create more awesome pet content! 💙🐾
 </div>
 
 <div class="grid" id="productGrid">
 <div class="card">
-<img src="https://via.placeholder.com/250x150/90caf9/1976d2?text=Pet+Camera" alt="Pet Camera">
+<img src="https://via.placeholder.com/300x200/90caf9/1976d2?text=Smart+Pet+Camera" alt="Furbo Smart Pet Camera with Treat Tossing">
 <div class="brand">Furbo</div>
-<h3>Smart Pet Camera 🎥</h3>
-<div class="rating">⭐⭐⭐⭐⭐ (4.5K reviews)</div>
+<h3>Smart Pet Camera with Treat Tossing 🎥</h3>
+<div class="rating">⭐⭐⭐⭐⭐ (4.5/5 - 4,500+ reviews)</div>
 <div class="price">$169.99</div>
 <ul class="features">
-<li>Treat tossing! 🦴</li>
-<li>1080p HD + night vision</li>
-<li>2-way audio chat</li>
-<li>Bark alerts</li>
+<li>Tosses treats to your pet! Freddy goes crazy for this! 🦴</li>
+<li>1080p HD camera with night vision</li>
+<li>2-way audio - talk to your pets!</li>
+<li>Bark alerts send notifications to your phone</li>
+<li>Purr-fect for keeping an eye on mischievous pets!</li>
 </ul>
 <a href="https://amzn.to/4nVnKU5" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x150/a5d6a7/2e7d32?text=Automatic+Feeder" alt="Auto Pet Feeder">
+<img src="https://via.placeholder.com/300x200/a5d6a7/2e7d32?text=Automatic+Feeder" alt="PETLIBRO Automatic Pet Feeder">
 <div class="brand">PETLIBRO</div>
 <h3>Automatic Pet Feeder ⏰</h3>
-<div class="rating">⭐⭐⭐⭐⭐ (8.9K reviews)</div>
+<div class="rating">⭐⭐⭐⭐⭐ (4.7/5 - 8,900+ reviews)</div>
 <div class="price">$79.99</div>
 <ul class="features">
-<li>6 meals/day schedule</li>
-<li>Voice recording</li>
-<li>Portion control</li>
-<li>Dry food compatible</li>
+<li>Schedule up to 6 meals per day - never forget feeding time!</li>
+<li>Record your voice to call your pets to eat 🎤</li>
+<li>Perfect portion control keeps pets healthy</li>
+<li>Works with dry food - great for cats & small dogs</li>
+<li>Archie & Rocco never miss a meal!</li>
 </ul>
 <a href="https://amzn.to/4o33u2K" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x150/ffcc80/e65100?text=GPS+Tracker" alt="GPS Pet Tracker">
+<img src="https://via.placeholder.com/300x200/ffcc80/e65100?text=GPS+Pet+Tracker" alt="Whistle GPS Pet Tracker">
 <div class="brand">Whistle</div>
 <h3>GPS Pet Tracker 📍</h3>
-<div class="rating">⭐⭐⭐⭐½ (2.3K reviews)</div>
+<div class="rating">⭐⭐⭐⭐½ (4.3/5 - 2,300+ reviews)</div>
 <div class="price">$99.95</div>
 <ul class="features">
-<li>Real-time tracking</li>
-<li>Escape alerts 🚨</li>
-<li>Health monitoring</li>
-<li>Waterproof design</li>
+<li>Track your pet in real-time anywhere!</li>
+<li>Escape alerts if they leave your yard 🚨</li>
+<li>Health & activity monitoring</li>
+<li>Waterproof - perfect for water-loving pups</li>
+<li>Peace of mind for adventurous pets like Freddy!</li>
 </ul>
 <a href="https://amzn.to/3LGB7Kl" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x150/ce93d8/7b1fa2?text=Interactive+Toy" alt="Cat Laser Toy">
+<img src="https://via.placeholder.com/300x200/ce93d8/7b1fa2?text=Laser+Cat+Toy" alt="PetSafe Interactive Laser Cat Toy">
 <div class="brand">PetSafe</div>
-<h3>Laser Cat Toy 🔴</h3>
-<div class="rating">⭐⭐⭐⭐⭐ (5.7K reviews)</div>
+<h3>Interactive Laser Cat Toy 🔴</h3>
+<div class="rating">⭐⭐⭐⭐⭐ (4.6/5 - 5,700+ reviews)</div>
 <div class="price">$29.99</div>
 <ul class="features">
-<li>Auto-play 15min</li>
-<li>Random patterns</li>
-<li>USB rechargeable</li>
-<li>Cat approved! 😺</li>
+<li>Automatic 15-minute play sessions</li>
+<li>Random laser patterns drive cats wild!</li>
+<li>USB rechargeable - eco-friendly</li>
+<li>Pete & Des love chasing this laser! 😺</li>
+<li>Keeps kitties entertained while you're busy</li>
 </ul>
 <a href="https://amzn.to/3XC5xjm" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x150/80deea/00838f?text=Water+Fountain" alt="Pet Fountain">
+<img src="https://via.placeholder.com/300x200/80deea/00838f?text=Cat+Water+Fountain" alt="Catit Flower Water Fountain">
 <div class="brand">Catit</div>
 <h3>Cat Water Fountain 💧</h3>
-<div class="rating">⭐⭐⭐⭐⭐ (12K reviews)</div>
+<div class="rating">⭐⭐⭐⭐⭐ (4.8/5 - 12,000+ reviews)</div>
 <div class="price">$34.99</div>
 <ul class="features">
-<li>Triple filtration</li>
-<li>Ultra-quiet pump</li>
-<li>3L capacity</li>
-<li>Flower design 🌸</li>
+<li>Triple filtration keeps water fresh & clean</li>
+<li>Ultra-quiet pump - won't scare shy cats</li>
+<li>3-liter capacity (perfect for multi-cat homes!)</li>
+<li>Adorable flower design 🌸</li>
+<li>Cats love flowing water - encourages hydration!</li>
 </ul>
 <a href="https://amzn.to/43UWPRd" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x150/ffab91/d84315?text=Grooming+Kit" alt="Pet Clippers">
+<img src="https://via.placeholder.com/300x200/ffab91/d84315?text=Grooming+Clippers" alt="Wahl Professional Grooming Kit">
 <div class="brand">Wahl</div>
 <h3>Pro Grooming Clippers ✂️</h3>
-<div class="rating">⭐⭐⭐⭐½ (3.9K reviews)</div>
+<div class="rating">⭐⭐⭐⭐½ (4.4/5 - 3,900+ reviews)</div>
 <div class="price">$54.99</div>
 <ul class="features">
-<li>Low-noise motor</li>
-<li>5 guide combs</li>
-<li>Cordless freedom</li>
-<li>Professional grade</li>
+<li>Low-noise motor - less scary for nervous pets</li>
+<li>5 guide combs for different coat lengths</li>
+<li>Cordless design for easy grooming anywhere</li>
+<li>Professional-grade quality at home prices</li>
+<li>Keep your pups looking pawsome! 💈</li>
 </ul>
 <a href="https://amzn.to/48nStDB" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/250x150/f48fb1/c2185b?text=Chew+Toys" alt="Dog Toys">
+<img src="https://via.placeholder.com/300x200/f48fb1/c2185b?text=KONG+Dog+Toys" alt="KONG Classic Dog Toys">
 <div class="brand">KONG</div>
-<h3>Indestructible Toys 🦴</h3>
-<div class="rating">⭐⭐⭐⭐⭐ (9.2K reviews)</div>
+<h3>KONG Indestructible Dog Toys 🦴</h3>
+<div class="rating">⭐⭐⭐⭐⭐ (4.9/5 - 9,200+ reviews)</div>
 <div class="price">$19.99</div>
 <ul class="features">
-<li>Super durable!</li>
-<li>Fill w/ treats</li>
-<li>Unpredictable bounce</li>
-<li>Made in USA 🇺🇸</li>
+<li>Super durable - even Archie can't destroy these!</li>
+<li>Fill with treats or peanut butter 🥜</li>
+<li>Unpredictable bounce keeps dogs entertained</li>
+<li>Made in USA with pet-safe materials 🇺🇸</li>
+<li>Freddy's favorite toy for fetch sessions!</li>
 </ul>
 <a href="https://amzn.to/48iuQx6" class="btn" target="_blank" rel="nofollow noopener">Shop Now →</a>
 </div>
 </div>
 
 <div class="carousel">
-<button class="carousel-btn" onclick="prevProduct()">⬅️ Prev</button>
+<button class="carousel-btn" onclick="prevProduct()">⬅️ Previous</button>
 <span id="carouselInfo">Product <span id="currentIndex">1</span> of 7</span>
 <button class="carousel-btn" onclick="nextProduct()">Next ➡️</button>
 </div>
