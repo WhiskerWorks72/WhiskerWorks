@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Products | Whisker Works Innovation Catalog</title>
+    <meta name="description" content="Explore Whisker Works' complete product lineup: Pet Starter Kits, Smart Tech, Subscription Boxes, Luxury Lifestyle, and more. Vote for your favorites!">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span>Whisker Works</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="roadmap.html" class="nav-link">Roadmap</a></li>
+                <li><a href="products.html" class="nav-link active">Products</a></li>
+                <li><a href="vote.html" class="nav-link">Vote</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HERO -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(10, 15, 26, 0.9), rgba(30, 77, 60, 0.8));"></div>
+        
+        <div class="hero-content container">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Our Products</h1>
+            <p class="hero-subtitle">Innovation meets premium pet care</p>
+        </div>
+    </section>
+    
+    <!-- INTRO -->
+    <section class="section-medium">
+        <div class="container" style="max-width: 900px; text-align: center;">
+            <p style="font-size: 1.25rem; color: var(--color-text-secondary); line-height: 1.8;">
+                From starter kits to AI-powered technology, luxury lifestyle products to subscription boxes—explore 
+                our complete product ecosystem organized by launch phase. <strong>Vote for your favorites</strong> to help 
+                us prioritize what launches first!
+            </p>
+        </div>
+    </section>
+    
+    <!-- PHASE 2: DIGITAL PRODUCTS & STARTER KITS (2027-2029) -->
+    <section id="starter-kits" class="section-dark">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <span style="color: var(--color-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Coming 2027</span>
+                <h2 class="mt-sm">Pet Starter Kits</h2>
+                <p style="color: var(--color-text-secondary); max-width: 700px; margin: var(--spacing-md) auto 0;">
+                    Complete premium packages for every pet type. Everything your new companion needs in one thoughtfully curated box.
+                </p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Dog Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Dog Starter Kit</h3>
+                        <p class="card-text">Premium collar, leash, bowls, toys, grooming essentials, training guide, and first-year health tracker.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="dog-kit" data-product-name="Dog Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=800&q=80" alt="Cat Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Cat Starter Kit</h3>
+                        <p class="card-text">Litter box, premium litter, scratching post, toys, bowls, grooming tools, and care guide.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="cat-kit" data-product-name="Cat Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=800&q=80" alt="Rabbit Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Rabbit Starter Kit</h3>
+                        <p class="card-text">Hutch accessories, hay feeders, water bottles, toys, grooming kit, and nutrition guide.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="rabbit-kit" data-product-name="Rabbit Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1552728089-57bdde30beb3?w=800&q=80" alt="Bird Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Bird Starter Kit</h3>
+                        <p class="card-text">Cage accessories, perches, toys, food/water dishes, treats, and care manual.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="bird-kit" data-product-name="Bird Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="Reptile Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Reptile Starter Kit</h3>
+                        <p class="card-text">Terrarium essentials, heating/lighting setup, substrate, décor, and comprehensive care guide.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="reptile-kit" data-product-name="Reptile Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1520990269087-6dc8f82a3fb1?w=800&q=80" alt="Fish Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Aquarium Starter Kit</h3>
+                        <p class="card-text">Premium filter, heater, lighting, water conditioner, decorations, and fish care guide.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="fish-kit" data-product-name="Aquarium Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=800&q=80" alt="Horse Starter Kit" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Horse Starter Kit</h3>
+                        <p class="card-text">Grooming essentials, halter, lead rope, brushes, hoof pick, treats, and equine care manual.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="horse-kit" data-product-name="Horse Starter Kit">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PHASE 3: SMART PET TECH (2029-2032) -->
+    <section id="smart-tech" class="section-medium">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <span style="color: var(--color-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Coming 2029-2030</span>
+                <h2 class="mt-sm">Smart Pet Technology</h2>
+                <p style="color: var(--color-text-secondary); max-width: 700px; margin: var(--spacing-md) auto 0;">
+                    AI-powered devices that keep your pets safe, healthy, and connected. The future of pet care is here.
+                </p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1544568100-847a948585b9?w=800&q=80" alt="Smart Collar" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Smart Collar with GPS</h3>
+                        <p class="card-text">Real-time location tracking, activity monitoring, health metrics, and escape alerts via smartphone app.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="smart-collar" data-product-name="Smart Collar">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1591769225440-811ad7d6eab3?w=800&q=80" alt="Automatic Feeder" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">AI-Powered Automatic Feeder</h3>
+                        <p class="card-text">Scheduled meals, portion control, voice recording, camera monitoring, and smartphone notifications.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="smart-feeder" data-product-name="AI Feeder">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80" alt="GPS Tracker" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Advanced GPS Pet Tracker</h3>
+                        <p class="card-text">Lightweight, waterproof tracker with nationwide coverage, geofencing, and 30-day battery life.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="gps-tracker" data-product-name="GPS Tracker">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1493246507139-91e8fad9978e?w=800&q=80" alt="Smart Barrier" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">Smart Home Pet Barrier</h3>
+                        <p class="card-text">Automatic pet gates with smartphone control, scheduling, and sensors to keep pets safe in designated areas.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="smart-barrier" data-product-name="Smart Barrier">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PHASE 4: SUBSCRIPTION BOXES (2032-2035) -->
+    <section id="subscriptions" class="section-dark">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <span style="color: var(--color-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Coming 2032</span>
+                <h2 class="mt-sm">Subscription Box Empire</h2>
+                <p style="color: var(--color-text-secondary); max-width: 700px; margin: var(--spacing-md) auto 0;">
+                    Monthly curated boxes packed with toys, treats, and accessories. Three tiers to match every lifestyle.
+                </p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">📦</div>
+                        <h3 class="card-title">Basic Box</h3>
+                        <p style="color: var(--color-gold); font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">$29/month</p>
+                        <ul style="text-align: left; list-style: none; padding: 0; color: var(--color-text-secondary);">
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> 3-4 premium toys
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> Healthy treats
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> 1 accessory item
+                            </li>
+                        </ul>
+                        <button class="btn btn-ghost vote-btn mt-md" data-product-id="basic-box" data-product-name="Basic Subscription">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll" style="border: 2px solid var(--color-gold);">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🎁</div>
+                        <span style="background: var(--color-gold); color: var(--color-bg-dark); padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.85rem; font-weight: 700;">MOST POPULAR</span>
+                        <h3 class="card-title mt-sm">Premium Box</h3>
+                        <p style="color: var(--color-gold); font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">$49/month</p>
+                        <ul style="text-align: left; list-style: none; padding: 0; color: var(--color-text-secondary);">
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> 5-6 premium toys
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> Gourmet treats
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> 2-3 accessories
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> Grooming product
+                            </li>
+                        </ul>
+                        <button class="btn btn-primary mt-md vote-btn" data-product-id="premium-box" data-product-name="Premium Subscription">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">👑</div>
+                        <h3 class="card-title">Luxury Box</h3>
+                        <p style="color: var(--color-gold); font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">$99/month</p>
+                        <ul style="text-align: left; list-style: none; padding: 0; color: var(--color-text-secondary);">
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> 8+ designer toys
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> Organic treats
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> 4-5 luxury items
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> Spa products
+                            </li>
+                            <li style="margin-bottom: var(--spacing-xs); padding-left: 1.5rem; position: relative;">
+                                <span style="position: absolute; left: 0;">✓</span> Exclusive merch
+                            </li>
+                        </ul>
+                        <button class="btn btn-ghost vote-btn mt-md" data-product-id="luxury-box" data-product-name="Luxury Subscription">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-xl text-center">
+                <div class="card animate-on-scroll" style="max-width: 600px; margin: 0 auto;">
+                    <div class="card-content">
+                        <h3 class="card-title">🎄 Seasonal Advent Calendars</h3>
+                        <p class="card-text">Limited edition holiday calendars with 24 days of surprises—toys, treats, and exclusive items. Perfect for making the season special.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="advent-calendar" data-product-name="Advent Calendar">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SPECIALTY PRODUCTS -->
+    <section class="section-medium">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <span style="color: var(--color-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Coming 2030-2035</span>
+                <h2 class="mt-sm">Specialty Products</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80" alt="Golf Toys" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">⛳ Golf-Themed Collection</h3>
+                        <p class="card-text">Premium golf ball chew toys, golf club teethers, putting green mats, and golf-inspired accessories for sporty pups.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="golf-toys" data-product-name="Golf Collection">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80" alt="Designer Beds" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">🛏️ Designer Pet Beds</h3>
+                        <p class="card-text">Luxury orthopedic beds with memory foam, premium fabrics, and modern designs that complement any home décor.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="designer-beds" data-product-name="Designer Beds">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=800&q=80" alt="Pet Furniture" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">🪑 Premium Pet Furniture</h3>
+                        <p class="card-text">Cat trees, dog loungers, and modular pet furniture that's both functional and beautiful—handcrafted with quality materials.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="pet-furniture" data-product-name="Pet Furniture">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- PHASE 7: LUXURY LIFESTYLE (2042-2045) -->
+    <section class="section-dark">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <span style="color: var(--color-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Coming 2042+</span>
+                <h2 class="mt-sm">Luxury Lifestyle Collection</h2>
+                <p style="color: var(--color-text-secondary); max-width: 700px; margin: var(--spacing-md) auto 0;">
+                    High-end fashion and lifestyle products for the most discerning pet parents.
+                </p>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1561037404-61cd46aa615b?w=800&q=80" alt="Pet Apparel" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">👔 Luxury Pet Apparel</h3>
+                        <p class="card-text">Designer coats, sweaters, and outfits made from premium materials. Fashion-forward designs for every season.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="pet-apparel" data-product-name="Pet Apparel">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="Matching Sets" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">👕 Human + Pet Matching Sets</h3>
+                        <p class="card-text">Coordinated fashion for you and your pet. Matching hoodies, tees, pajamas, and accessories for the perfect duo look.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="matching-sets" data-product-name="Matching Sets">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Grooming Line" class="card-image" loading="lazy">
+                    <div class="card-content">
+                        <h3 class="card-title">✨ Premium Grooming Line</h3>
+                        <p class="card-text">Spa-quality shampoos, conditioners, paw balms, and grooming tools. Natural, organic ingredients for sensitive skin.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="grooming-line" data-product-name="Grooming Line">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SERVICES & PROGRAMS -->
+    <section class="section-medium">
+        <div class="container">
+            <div class="text-center mb-xl">
+                <span style="color: var(--color-gold); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">Coming 2035+</span>
+                <h2 class="mt-sm">Services & Programs</h2>
+            </div>
+            
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🎥</div>
+                        <h3 class="card-title">AI Personalized Video Service</h3>
+                        <p class="card-text">AI-generated custom videos of your pet doing amazing things. Perfect for gifts, social media, and memories.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="ai-video" data-product-name="AI Video Service">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🏨</div>
+                        <h3 class="card-title">Pet Hotel Booking Platform</h3>
+                        <p class="card-text">Book luxury boarding, training, grooming, and spa services at Whisker Works Pet Resorts nationwide.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="hotel-booking" data-product-name="Hotel Platform">Vote for This</button>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">❤️</div>
+                        <h3 class="card-title">Rescue & Adoption Programs</h3>
+                        <p class="card-text">Partner with rescues nationwide. Free starter kits for adopted pets, donation matching, and adoption events.</p>
+                        <button class="btn btn-ghost vote-btn" data-product-id="rescue-program" data-product-name="Rescue Program">Vote for This</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <section class="section-forest">
+        <div class="container text-center">
+            <h2 class="animate-on-scroll">Help Us Prioritize</h2>
+            <p style="max-width: 700px; margin: 0 auto var(--spacing-xl); color: var(--color-cream); font-size: 1.25rem;">
+                Your votes directly influence our product roadmap. Tell us what you're most excited about!
+            </p>
+            <div>
+                <a href="vote.html" class="btn btn-primary">Cast Your Vote</a>
+                <a href="index.html#waitlist" class="btn btn-secondary" style="margin-left: 1rem;">Join Waitlist</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Whisker Works</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        Building the future of pet happiness through innovative technology and premium lifestyle products.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">▶️</a>
+                        <a href="https://instagram.com/whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://twitter.com/whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="https://tiktok.com/@whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Whisker Works. All rights reserved.</p>
+                <p>Made with ❤️ by the Pawfectly Whiskered team</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

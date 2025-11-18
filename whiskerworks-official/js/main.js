@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navMenu = document.querySelector('.nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
     
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
@@ -17,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Close menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('active');

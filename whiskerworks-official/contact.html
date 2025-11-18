@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact Us | Whisker Works</title>
+    <meta name="description" content="Get in touch with Whisker Works. Contact us for partnerships, support, press inquiries, or just to say hello!">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span>Whisker Works</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="roadmap.html" class="nav-link">Roadmap</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="vote.html" class="nav-link">Vote</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HERO -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(10, 15, 26, 0.9), rgba(30, 77, 60, 0.8));"></div>
+        
+        <div class="hero-content container">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Get in Touch</h1>
+            <p class="hero-subtitle">We'd love to hear from you</p>
+        </div>
+    </section>
+    
+    <!-- CONTACT OPTIONS -->
+    <section class="section-medium">
+        <div class="container">
+            <div class="grid-3">
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">📧</div>
+                        <h3 class="card-title">Email Us</h3>
+                        <p class="card-text">For general inquiries, support, or feedback</p>
+                        <a href="mailto:hello@whiskerworks.com" style="color: var(--color-gold); font-weight: 600;">hello@whiskerworks.com</a>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">🤝</div>
+                        <h3 class="card-title">Partnerships</h3>
+                        <p class="card-text">Interested in collaborating with us?</p>
+                        <a href="mailto:partnerships@whiskerworks.com" style="color: var(--color-gold); font-weight: 600;">partnerships@whiskerworks.com</a>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <div style="font-size: 3rem; margin-bottom: var(--spacing-md);">📰</div>
+                        <h3 class="card-title">Press & Media</h3>
+                        <p class="card-text">Press inquiries and media requests</p>
+                        <a href="mailto:press@whiskerworks.com" style="color: var(--color-gold); font-weight: 600;">press@whiskerworks.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACT FORM -->
+    <section class="section-dark">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); align-items: start;">
+                <!-- Form -->
+                <div class="animate-on-scroll">
+                    <h2 class="mb-md">Send Us a Message</h2>
+                    <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl);">
+                        Have a question, suggestion, or just want to say hi? Fill out the form and we'll get back to you within 24-48 hours.
+                    </p>
+                    
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email *</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="your@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a topic...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="press">Press/Media</option>
+                                <option value="feedback">Product Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us what's on your mind..." rows="6"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Info -->
+                <div class="animate-on-scroll">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title mb-lg">Why Contact Us?</h3>
+                            
+                            <div style="margin-bottom: var(--spacing-lg);">
+                                <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: var(--spacing-xs);">🎯 Product Suggestions</h4>
+                                <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                                    Have an idea for a product? We want to hear it! Many of our best ideas come from the community.
+                                </p>
+                            </div>
+                            
+                            <div style="margin-bottom: var(--spacing-lg);">
+                                <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: var(--spacing-xs);">🤝 Partnerships</h4>
+                                <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                                    Looking to collaborate? We're open to strategic partnerships with like-minded brands and creators.
+                                </p>
+                            </div>
+                            
+                            <div style="margin-bottom: var(--spacing-lg);">
+                                <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: var(--spacing-xs);">💼 Careers</h4>
+                                <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                                    Interested in joining the team? We're always looking for talented, passionate people. Send your resume!
+                                </p>
+                            </div>
+                            
+                            <div>
+                                <h4 style="color: var(--color-gold); font-size: 1.1rem; margin-bottom: var(--spacing-xs);">📣 Just Want to Chat?</h4>
+                                <p style="color: var(--color-text-secondary); font-size: 0.95rem;">
+                                    We love hearing from fellow pet lovers. Share your pet's story or just say hello—we read every message!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-md">
+                        <div class="card-content" style="background: linear-gradient(135deg, var(--color-forest-green), var(--color-bg-dark)); text-align: center;">
+                            <h3 class="card-title" style="color: var(--color-gold);">Response Time</h3>
+                            <p style="font-size: 2rem; font-weight: 700; color: var(--color-cream); margin: var(--spacing-md) 0;">24-48 Hours</p>
+                            <p style="color: var(--color-cream-dark); font-size: 0.9rem;">
+                                We typically respond within 1-2 business days. For urgent matters, please note that in your message.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER -->
+    <section class="section-forest">
+        <div class="container" style="max-width: 700px; text-align: center;">
+            <h2 class="mb-md">Subscribe to Our Newsletter</h2>
+            <p style="color: var(--color-cream); font-size: 1.1rem; margin-bottom: var(--spacing-xl);">
+                Stay updated with product launches, exclusive offers, behind-the-scenes content, and pet care tips. 
+                Join 1,500+ pet parents already subscribed!
+            </p>
+            
+            <form id="newsletter-form" class="animate-on-scroll">
+                <div style="display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                    <input type="email" name="email" class="form-input" required placeholder="your@email.com" style="flex: 1; min-width: 250px;">
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </div>
+                <p style="color: var(--color-cream-dark); font-size: 0.9rem; margin-top: var(--spacing-md);">
+                    🎁 New subscribers get 20% off their first order when the shop launches!
+                </p>
+            </form>
+        </div>
+    </section>
+    
+    <!-- SOCIAL MEDIA -->
+    <section class="section-medium">
+        <div class="container text-center">
+            <h2 class="mb-xl animate-on-scroll">Follow Our Journey</h2>
+            
+            <div class="grid-4">
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">▶️</div>
+                            <h3 class="card-title" style="font-size: 1.25rem;">YouTube</h3>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">67K+ Subscribers</p>
+                            <p style="color: var(--color-gold); font-weight: 600; margin-top: var(--spacing-sm);">@PawfectlyWhiskered</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <a href="https://instagram.com/whiskerworks" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">📷</div>
+                            <h3 class="card-title" style="font-size: 1.25rem;">Instagram</h3>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Daily Updates</p>
+                            <p style="color: var(--color-gold); font-weight: 600; margin-top: var(--spacing-sm);">@whiskerworks</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <a href="https://twitter.com/whiskerworks" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🐦</div>
+                            <h3 class="card-title" style="font-size: 1.25rem;">Twitter</h3>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">News & Updates</p>
+                            <p style="color: var(--color-gold); font-weight: 600; margin-top: var(--spacing-sm);">@whiskerworks</p>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card animate-on-scroll">
+                    <div class="card-content" style="text-align: center;">
+                        <a href="https://tiktok.com/@whiskerworks" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+                            <div style="font-size: 3rem; margin-bottom: var(--spacing-sm);">🎵</div>
+                            <h3 class="card-title" style="font-size: 1.25rem;">TikTok</h3>
+                            <p style="color: var(--color-text-secondary); font-size: 0.9rem;">Fun Pet Content</p>
+                            <p style="color: var(--color-gold); font-weight: 600; margin-top: var(--spacing-sm);">@whiskerworks</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FAQ -->
+    <section class="section-dark">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="text-center mb-xl animate-on-scroll">Common Questions</h2>
+            
+            <div class="card animate-on-scroll mb-md">
+                <div class="card-content">
+                    <h3 style="color: var(--color-gold); margin-bottom: var(--spacing-sm);">Do you have a physical office?</h3>
+                    <p style="color: var(--color-text-secondary);">
+                        Currently, we operate remotely with team members across the US. Once we open physical stores in 2035+, 
+                        you'll be able to visit us in person!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card animate-on-scroll mb-md">
+                <div class="card-content">
+                    <h3 style="color: var(--color-gold); margin-bottom: var(--spacing-sm);">Can I visit your facilities?</h3>
+                    <p style="color: var(--color-text-secondary);">
+                        Not yet! But when we launch our Pet Hotels and Retail Stores (2035+), we'll offer tours and open house events. 
+                        Join the waitlist to be notified.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card animate-on-scroll mb-md">
+                <div class="card-content">
+                    <h3 style="color: var(--color-gold); margin-bottom: var(--spacing-sm);">Are you hiring?</h3>
+                    <p style="color: var(--color-text-secondary);">
+                        As we grow, we'll be hiring across multiple departments. Send your resume to careers@whiskerworks.com 
+                        and we'll keep you posted on opportunities.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="card animate-on-scroll">
+                <div class="card-content">
+                    <h3 style="color: var(--color-gold); margin-bottom: var(--spacing-sm);">How can I become a brand ambassador?</h3>
+                    <p style="color: var(--color-text-secondary);">
+                        We're launching our ambassador program in 2026! If you're a pet influencer or passionate content creator, 
+                        reach out at partnerships@whiskerworks.com with your social media handles.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Whisker Works</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        Building the future of pet happiness through innovative technology and premium lifestyle products.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">▶️</a>
+                        <a href="https://instagram.com/whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://twitter.com/whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="https://tiktok.com/@whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Whisker Works. All rights reserved.</p>
+                <p>Made with ❤️ by the Pawfectly Whiskered team</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
