@@ -1,0 +1,19 @@
+# Backup directories
+old-website-backup/
+whiskerworks-official/
+whiskerworks-site/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Vote & Community | Help Shape Whisker Works</title>
+    <meta name="description" content="Vote on which Whisker Works products launch first. Join our community and influence the future of pet care innovation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span>
+                <span>Whisker Works</span>
+            </a>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="roadmap.html" class="nav-link">Roadmap</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="vote.html" class="nav-link active">Vote</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Toggle dark mode">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <button class="hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- HERO -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-overlay" style="background: linear-gradient(135deg, rgba(10, 15, 26, 0.9), rgba(30, 77, 60, 0.8));"></div>
+        
+        <div class="hero-content container">
+            <h1 class="hero-title" style="font-size: clamp(2.5rem, 6vw, 4rem);">Help Shape the Future</h1>
+            <p class="hero-subtitle">Your voice matters—vote on what we build next</p>
+        </div>
+    </section>
+    
+    <!-- INTRO -->
+    <section class="section-medium">
+        <div class="container" style="max-width: 900px; text-align: center;">
+            <p style="font-size: 1.25rem; color: var(--color-text-secondary); line-height: 1.8;">
+                Whisker Works is built by the community, for the community. Your feedback directly influences our 
+                product roadmap. Vote in the polls below and see real-time results from pet parents worldwide.
+            </p>
+        </div>
+    </section>
+    
+    <!-- POLL 1: STARTER KITS -->
+    <section class="section-dark">
+        <div class="container" style="max-width: 800px;">
+            <div class="card animate-on-scroll">
+                <div class="card-content">
+                    <h2 style="margin-bottom: var(--spacing-md); color: var(--color-gold);">🗳️ Poll #1</h2>
+                    <h3 class="mb-md">Which Pet Starter Kit Should Launch First?</h3>
+                    <p class="card-text mb-lg">We're planning to launch starter kits for multiple pet types. Help us decide which one to prioritize in 2027!</p>
+                    
+                    <form class="vote-form" data-poll-id="starter-kit-poll">
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="starter-kit" value="dog" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🐕 Dog Starter Kit</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="starter-kit" value="cat" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🐱 Cat Starter Kit</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="starter-kit" value="rabbit" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🐰 Rabbit Starter Kit</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="starter-kit" value="bird" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🦜 Bird Starter Kit</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="starter-kit" value="other" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🐠 Other (Reptile, Fish, Horse)</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary mt-lg" style="width: 100%;">Cast Your Vote</button>
+                    </form>
+                    
+                    <!-- Results Display (Hidden initially) -->
+                    <div class="vote-results hidden mt-xl">
+                        <h4 style="color: var(--color-gold); margin-bottom: var(--spacing-md);">Current Results:</h4>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🐕 Dog</span>
+                                <span>35%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="35"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🐱 Cat</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="40"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🐰 Rabbit</span>
+                                <span>12%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="12"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🦜 Bird</span>
+                                <span>8%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="8"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>🐠 Other</span>
+                                <span>5%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- POLL 2: MOST EXCITED PRODUCT -->
+    <section class="section-medium">
+        <div class="container" style="max-width: 800px;">
+            <div class="card animate-on-scroll">
+                <div class="card-content">
+                    <h2 style="margin-bottom: var(--spacing-md); color: var(--color-gold);">🗳️ Poll #2</h2>
+                    <h3 class="mb-md">What Product Are You Most Excited For?</h3>
+                    <p class="card-text mb-lg">Across all our phases, which product category excites you the most? This helps us allocate resources effectively.</p>
+                    
+                    <form class="vote-form" data-poll-id="excited-product-poll">
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="excited-product" value="smart-tech" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🤖 Smart Pet Technology (GPS, AI Feeders)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="excited-product" value="subscription" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">📦 Monthly Subscription Boxes</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="excited-product" value="luxury" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">👑 Luxury Lifestyle & Fashion</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="excited-product" value="hotels" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🏨 Pet Hotels & Resorts</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="excited-product" value="ai-video" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🎥 AI Personalized Video Service</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary mt-lg" style="width: 100%;">Cast Your Vote</button>
+                    </form>
+                    
+                    <!-- Results Display -->
+                    <div class="vote-results hidden mt-xl">
+                        <h4 style="color: var(--color-gold); margin-bottom: var(--spacing-md);">Current Results:</h4>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🤖 Smart Tech</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="45"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>📦 Subscription Boxes</span>
+                                <span>30%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="30"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>👑 Luxury Lifestyle</span>
+                                <span>12%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="12"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🏨 Pet Hotels</span>
+                                <span>8%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="8"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>🎥 AI Video</span>
+                                <span>5%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- POLL 3: SUBSCRIPTION BOX FEATURES -->
+    <section class="section-dark">
+        <div class="container" style="max-width: 800px;">
+            <div class="card animate-on-scroll">
+                <div class="card-content">
+                    <h2 style="margin-bottom: var(--spacing-md); color: var(--color-gold);">🗳️ Poll #3</h2>
+                    <h3 class="mb-md">What New Feature for Subscription Boxes?</h3>
+                    <p class="card-text mb-lg">We're planning additional features for our subscription boxes. Which would you value most?</p>
+                    
+                    <form class="vote-form" data-poll-id="subscription-feature-poll">
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="sub-feature" value="customization" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🎨 Full Customization (Choose your items)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="sub-feature" value="size-based" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">📏 Size-Based Options (Small, Medium, Large pets)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="sub-feature" value="dietary" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🥕 Dietary Preferences (Organic, grain-free, etc.)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="sub-feature" value="themed" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🎭 Themed Boxes (Holidays, seasons, hobbies)</span>
+                            </label>
+                        </div>
+                        
+                        <div class="poll-option">
+                            <label style="cursor: pointer; display: flex; align-items: center; width: 100%;">
+                                <input type="radio" name="sub-feature" value="multi-pet" required>
+                                <span style="margin-left: var(--spacing-sm); flex: 1;">🐾 Multi-Pet Discounts</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary mt-lg" style="width: 100%;">Cast Your Vote</button>
+                    </form>
+                    
+                    <!-- Results Display -->
+                    <div class="vote-results hidden mt-xl">
+                        <h4 style="color: var(--color-gold); margin-bottom: var(--spacing-md);">Current Results:</h4>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🎨 Customization</span>
+                                <span>38%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="38"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>📏 Size-Based</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="25"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🥕 Dietary</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="20"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container mb-sm">
+                            <div class="progress-label">
+                                <span>🎭 Themed</span>
+                                <span>10%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="10"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>🐾 Multi-Pet</span>
+                                <span>7%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-progress="7"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER SIGNUP -->
+    <section class="section-forest">
+        <div class="container" style="max-width: 600px;">
+            <div class="text-center mb-xl">
+                <h2>Stay Updated on Voting Results</h2>
+                <p style="color: var(--color-cream); font-size: 1.1rem;">
+                    Subscribe to our newsletter for exclusive updates, new polls, and early access to voting on upcoming products.
+                </p>
+            </div>
+            
+            <form id="newsletter-form" class="animate-on-scroll">
+                <div class="form-group">
+                    <input type="email" name="email" class="form-input" required placeholder="your@email.com" style="text-align: center;">
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe to Updates</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- COMMUNITY STATS -->
+    <section class="section-medium">
+        <div class="container">
+            <h2 class="text-center mb-xl animate-on-scroll">Community Impact</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="2847">0</div>
+                    <div class="stat-label">Total Votes Cast</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="1523">0</div>
+                    <div class="stat-label">Community Members</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Product Ideas Submitted</div>
+                </div>
+                <div class="stat-card animate-on-scroll">
+                    <div class="stat-number" data-target="3">0</div>
+                    <div class="stat-label">Features Implemented</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA -->
+    <section class="section-dark">
+        <div class="container text-center">
+            <h2 class="animate-on-scroll">Your Voice Shapes Our Future</h2>
+            <p style="max-width: 700px; margin: 0 auto var(--spacing-xl); color: var(--color-text-secondary); font-size: 1.25rem;">
+                Every vote counts. Together, we're building the most innovative pet care brand in the world.
+            </p>
+            <div>
+                <a href="products.html" class="btn btn-primary">Explore All Products</a>
+                <a href="about.html" class="btn btn-secondary" style="margin-left: 1rem;">Learn Our Story</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Whisker Works</h4>
+                    <p style="color: var(--color-text-secondary);">
+                        Building the future of pet happiness through innovative technology and premium lifestyle products.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="roadmap.html">Roadmap</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="vote.html">Vote</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.youtube.com/@PawfectlyWhiskered" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">▶️</a>
+                        <a href="https://instagram.com/whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://twitter.com/whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="https://tiktok.com/@whiskerworks" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Whisker Works. All rights reserved.</p>
+                <p>Made with ❤️ by the Pawfectly Whiskered team</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
